@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat with Our Bot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='static\styles.css') }}">
+</head>
+<<body style="background-image: url('{{ url_for('static', filename='medical-cross-and-plus-background-abstract-seamless-red-border-for-hospital-healthcare-and-pharmacy-geometrical-shapes-ornament-wallpaper-vector.jpg') }}');">
+
+    <header>
+        <h1>Chatbot Session</h1>
+    </header>
+    <div>
+        <form action="{{ url_for('chat') }}" method="post">
+            <input type="text" name="message" placeholder="What do you want to know...">
+            <button type="submit">Send</button>
+        </form>
+        <div id="chat-history">
+            {% for msg in history %}
+            <p>{{ msg }}</p>
+            {% endfor %}
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Chatbot Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='static\styles.css') }}">
+</head>
+<<body style="background-image: url('{{ url_for('static', filename='pngtree-medical-medical-element-red-heart-red-cross-picture-image_925647.jpg') }}');">
+    <header>
+        <h1>Hi there! I am Nurse Acity</h1>
+    </header>
+    <div class="slideshow-container">
+        {% for quote in quotes %}
+        <div class="mySlides fade">
+            <q>{{ quote }}</q>
+        </div>
+        {% endfor %}
+    </div>
+    <br>
+    <div style="text-align:center">
+        {% for _ in quotes %}
+        <span class="dot"></span>
+        {% endfor %}
+    </div>
+    <a href="{{ url_for('chat') }}"><button>Get Started</button></a>
+    <footer>
+        <p>© 2024 Chatbot Inc. All rights reserved.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

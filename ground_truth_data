@@ -1,0 +1,16 @@
+[
+  {
+    "query": "What is malaria?",
+    "answer": "Malaria is an acute febrile illness caused by Plasmodium parasites, transmitted through the bites of infected female Anopheles mosquitoes.",
+    "relevant_docs": [
+      "Malaria In Academic City"
+    ]
+  },
+  {
+    "query": "What is peptic ulcer?",
+    "answer": "Peptic ulcers are open sores that develop on the inner lining of the stomach or the upper portion of the small intestine, specifically the duodenum. These ulcers can occur as gastric ulcers within the stomach or duodenal ulcers in the duodenum.",
+    "relevant_docs": [
+      "Peptic Ulcer"
+    ]
+  }
+]
